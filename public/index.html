@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!--
+  <form class="flex justify-center">
+    <div class="bg-red-100 p-3 rounded-lg max-w-fit">
+
+      <h1 class="text-3xl font-bold text-center mt-5 mb-5">Login</h1>
+
+      <div class="flex justify-center m-1">
+        <input type="text" class="px-2 py-1 rounded-md" placeholder="Username">
+      </div>
+      <div class="flex justify-center m-1">
+        <input type="password" class="px-2 py-1 rounded-md" placeholder="Password">
+      </div>
+      <div class="flex justify-center m-1">
+        <button
+          class="text-slate-100 text-1xl bg-sky-400 hover:bg-sky-500 px-3 py-1 mb-5 mt-5 w-48 rounded-md">Submit</button>
+      </div>
+    </div>
+  </form>
+-->
+  <!-- Login form -->
+  <div class="rounded-lg border mx-auto max-w-sm shadow-lg">
+    <div class="flex flex-col p-6 space-y-2">
+      <div class="flex justify-center">
+        <!-- <img src="/placeholder.svg" width="100" height="100" alt="Retrams Logo" -->
+        <div class="w-[100px] h-[100px] aspect-[1/1] overflow-hidden rounded-lg bg-gray-100">
+        </div>
+      </div>
+      <h3 class="whitespace-nowrap tracking-tight text-2xl font-bold text-center">Login</h3>
+      <p class="text-sm text-muted-foreground text-center">
+        Enter your username and password to login to your account
+      </p>
+    </div>
+    <div class="p-6">
+      <div class="space-y-4">
+        <div class="space-y-2">
+          <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            for="username">
+            Username
+          </label>
+          <input
+            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="username" placeholder="Enter your username" required="" type="text" />
+        </div>
+        <div class="space-y-2">
+          <label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            for="password">
+            Password
+          </label>
+          <input
+            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="password" required="" type="password" />
+        </div>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-900 text-gray-50 hover:bg-primary/90 h-10 px-4 py-2 w-full"
+          type="submit">
+          Login
+        </button>
+        <div class="mt-4 text-center text-sm">
+          <a class="underline" href="#">
+            Forgot your password?
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Twitter card -->
+  <div class="w-full max-w-md bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden mx-auto">
+    <div class="flex justify-between items-center px-6 py-4">
+      <div class="flex space-x-4">
+        <div>
+          <img alt="Profile" class="rounded-full" height="48" src="/placeholder.svg" width="48"
+            style="aspect-ratio: 48 / 48; object-fit: cover;" />
+        </div>
+        <div>
+          <div class="text-lg font-bold dark:text-white">John Doe</div>
+          <div class="text-sm text-gray-500 dark:text-gray-200">@johndoe</div>
+        </div>
+      </div>
+      <div>
+        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="1"></circle>
+          <circle cx="19" cy="12" r="1"></circle>
+          <circle cx="5" cy="12" r="1"></circle>
+        </svg>
+      </div>
+    </div>
+    <div class="px-6 py-4">
+      <div class="text-sm text-gray-800 dark:text-gray-200">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque id erat at blandit. Donec
+        ullamcorper turpis vitae dolor lacinia mollis. Donec at augue eget ipsum porttitor interdum.
+      </div>
+    </div>
+    <div class="flex justify-between items-center space-x-4 pt-4 border-t border-gray-200 dark:border-gray-700 p-4">
+      <div class="flex items-center space-x-4">
+        <svg class=" h-4 w-4 text-gray-500 dark:text-gray-200" fill="none" height="24" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+          <path d="M21 3v5h-5"></path>
+          <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+          <path d="M8 16H3v5"></path>
+        </svg>
+        <svg class=" h-4 w-4 text-gray-500 dark:text-gray-200" fill="none" height="24" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+          </path>
+        </svg>
+        <svg class=" h-4 w-4 text-gray-500 dark:text-gray-200" fill="none" height="24" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="17 8 12 3 7 8"></polyline>
+          <line x1="12" x2="12" y1="3" y2="15"></line>
+        </svg>
+      </div>
+      <div class="flex items-center space-x-4">
+        <svg class=" h-4 w-4 text-gray-500 dark:text-gray-200" fill="none" height="24" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="1"></circle>
+          <circle cx="19" cy="12" r="1"></circle>
+          <circle cx="5" cy="12" r="1"></circle>
+        </svg>
+        <svg class=" h-4 w-4 text-gray-500 dark:text-gray-200" fill="none" height="24" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Re-sizeable divs -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 md:p-6">
+    <div class="bg-gray-200 dark:bg-gray-800 p-4 rounded-md">
+      <p class="text-center text-gray-700 dark:text-gray-300">Placeholder Text 1</p>
+    </div>
+    <div class="bg-gray-200 dark:bg-gray-800 p-4 rounded-md">
+      <p class="text-center text-gray-700 dark:text-gray-300">Placeholder Text 2</p>
+    </div>
+    <div class="bg-gray-200 dark:bg-gray-800 p-4 rounded-md">
+      <p class="text-center text-gray-700 dark:text-gray-300">Placeholder Text 3</p>
+    </div>
+  </div>
+
+  <!-- Code block -->
+  <div class="flex justify-center">
+    <aside class="bg-gray-700 text-white p-6 rounded-lg w-full max-w-lg font-mono">
+      <div class="flex justify-between items-center">
+        <div class="flex space-x-2 text-red-500">
+          <div class="w-3 h-3 rounded-full bg-red-400"></div>
+          <div class="w-3 h-3 rounded-full bg-yellow-300"></div>
+          <div class="w-3 h-3 rounded-full bg-green-300"></div>
+        </div>
+        <p class="text-sm">bash</p>
+      </div>
+      <div class="mt-4">
+        <p class="text-green-300">$ npm install next</p>
+        <p class="text-gray-200">+ next@10.2.3</p>
+        <p class="text-gray-200">added 1 package, and audited 2 packages in 3s</p>
+        <p class="text-green-400">$</p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Minimal Button -->
+  <button
+    class="justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-200 bg-background hover:bg-gray-200 h-10 px-4 py-2 flex items-center gap-2">
+    Button
+  </button>
+
+
+</body>
+
+</html>
